@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+<body>
+ <!-- 被app实例所控制的区域 -->
+    <div id="app">
+        <label for="" v-model="fruits">
+            <!-- <input type="checkbox"  value = "女" v-model = 'hobbies'> 女
+           <input type="checkbox"  value = "男" v-model = 'hobbies'> 男
+           <input type="checkbox"  value = "中性" v-model = 'hobbies'> 中性
+           <input type="checkbox"  value = "中性" v-model = 'hobbies'> 中性 -->
+           <select name="" id="" >
+               <option value="水果" ></option>
+               <option value="苹果" >苹果</option>
+               <option value="成果" >成果</option>
+               < value="结果" >结果</             option>
+           </select>
+        </label>
+        <!-- <input type="text" v-model='msg'> -->
+        <h2>爱吃：{{fruits}}</h2>
+    </div>
+
+    <script src="../vue.js"></script>
+    <script>
+        // 创建实例对象
+        const app = new Vue({
+           // 指定控制的区域
+           el:'#app',
+           data:{
+            //    msg : 'vue',
+            //    hobbies : []
+                  fruits : ""
+           },
+           methods:{},
+        //    computed:{
+        //        nums = [1,2,3,4]
+        //        let newNums  = nums.reduce(function(preValue,n),0){
+        //            return preValue + n
+        //        }
+        //    }
+        });
+    </script>
+</body>
+
+</html>
